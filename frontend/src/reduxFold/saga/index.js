@@ -14,7 +14,7 @@ function* handleFetchList() {
 }
 
 function* watchFetchList() {
-    yield takeLatest('SERVICE_FETCH_REQUEST', handleFetchList)
+    yield takeLatest('SERVICE_FETCH_REQUEST', handleFetchList);
 }
 
 // item
@@ -29,7 +29,7 @@ function* handleFetchItem(action) {
 }
 
 function* watchFetchItem() {
-    yield takeLatest('FETCH_ITEM_REQUEST', handleFetchItem)
+    yield takeLatest('FETCH_ITEM_REQUEST', handleFetchItem);
 }
 
 export default function* saga() {
